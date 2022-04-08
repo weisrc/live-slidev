@@ -35,7 +35,7 @@ export function verify(
 
 export async function pack(priv: CryptoKey, data: unknown) {
 	const time = Date.now();
-	const uuid = crypto.randomUUID();
+	const uuid = Math.random().toString(36).slice(2);
 	const bytes = encoder.encode(JSON.stringify({ data, time, uuid }));
 	const signature = new Uint8Array(await sign(priv, bytes));
 	const packed = new Uint8Array(bytes.byteLength + signature.byteLength);
