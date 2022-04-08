@@ -1,0 +1,5 @@
+{
+	"$schema": "https://json.schemastore.org/nodemon.json",
+	"watch": ["src", "setup", "slides.md"],
+	"ext": "*"
+}

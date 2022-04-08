@@ -1,0 +1,32 @@
+{
+	
+	"name": "live-slidev",
+	"private": true,
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"types": "types/index.d.ts",
+	"exports": {
+		"import": "./dist/live-slidev.es.js"
+	},
+	"bin": {
+		"live-slidev": "./bin/index.js"
+	},
+	"scripts": {
+		"types": "tsc || true",
+		"build": "yarn types && vite build --config lib.vite.config.ts",
+		"dev": "nodemon --exec yarn dev:build & yarn dev:live",
+		"dev:live": "live-server --wait=2000 --mount=/live-slidev:docs --entry-file=docs/index.html --open=live-slidev",
+		"dev:build": "slidev build -o docs --base /live-slidev/"
+	},
+	"dependencies": {
+		"@slidev/cli": "^0.29.2",
+		"@slidev/theme-default": "*",
+		"@slidev/theme-seriph": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.23",
+		"live-server": "^1.2.1",
+		"nodemon": "^2.0.15",
+		"typescript": "^4.6.3"
+	}
+}

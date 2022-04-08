@@ -1,0 +1,11 @@
+.github
+docs
+node_modules
+setup
+src
+.gitignore
+lib.vite.config.ts
+nodemon.json
+slides.md
+tsconfig.json
+yarn.lock
