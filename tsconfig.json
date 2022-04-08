@@ -16,9 +16,6 @@
 		"noImplicitReturns": true,
 		"skipLibCheck": true,
 		"declaration": true,
-		"paths": {
-			"live-slidev": ["src"]
-		}
 	},
 	"include": ["src"],
 	"exclude": ["node_modules"]

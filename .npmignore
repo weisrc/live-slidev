@@ -9,3 +9,4 @@ nodemon.json
 slides.md
 tsconfig.json
 yarn.lock
+components.d.ts
