@@ -39,3 +39,4 @@ For demo purposes, this repo's secret is shared so you can test it!
 
 - WebCrypto API requires a secure context. (Host it with GitHub Pages!)
 - May have issues when multiple clients are trying to present.
+- Fails to compile in Slidev Dev mode. (Rename main to something else when in Dev mode)
