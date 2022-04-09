@@ -1,5 +1,5 @@
 import { defineAppSetup } from "@slidev/types";
-import liveSlidev from "../src";
+import liveSlidev from "../dist/live-slidev.es";
 import key from "./key.json";
 
 const ROOM_ID = "4b86454b-1763-4e36-b8e6-68cf1fd1a31f";
